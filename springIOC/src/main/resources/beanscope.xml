@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    Define dependency   -->
+    <bean id="myFortuneService"
+          class="com.example.springlearnioc.springiocwithxml.helperclasses.HappyFortuneService"></bean>
+
+    <!--    scope default i.e. - singleton-->
+    <!--init-method and destroy-method-->
+    <bean id="myCoach"
+          class="com.example.springlearnioc.springiocwithxml.helperclasses.TrackCoach"
+          init-method = "executeBeforeBeanIsReady"
+          destroy-method = "executeAfterBeanDestroy">
+        <!-- Set up constructor injection -->
+        <constructor-arg ref="myFortuneService"></constructor-arg>
+    </bean>
+
+<!--    scope prototype-->
+    <bean id="myCoach2"
+          class="com.example.springlearnioc.springiocwithxml.helperclasses.BaseBallCoach"
+          scope="prototype">
+        <!-- Set up constructor injection -->
+        <constructor-arg ref="myFortuneService"></constructor-arg>
+    </bean>
+
+
+</beans>

@@ -1,0 +1,14 @@
+{
+  "id" : 1,
+  "firstName" : "Sudip",
+  "lastName" : "Ghosh",
+  "active" : true,
+  "address" : {
+    "houseNo" : "82/36/11,Ward no. 11,Malancha",
+    "city" : "kgp",
+    "country" : "IN",
+    "zipCode" : 721301
+  },
+  "progLangs" : ["Java", "C", "SQL"],
+  "frameworks" : ["spring","hibernate","docker"]
+}
