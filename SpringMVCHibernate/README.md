@@ -1,6 +1,6 @@
-#Spring MVC with Hibernate
+# Spring MVC with Hibernate
 
-###Setup
+### Setup
 * [DBScript](SpringMVCHibernate/dbscripts/dbscript.sql)
 
 * Change [HibernateConfig.java](SpringMVCHibernate/src/main/java/com/sudip/learn/springconfig/HibernateConfig.java) and

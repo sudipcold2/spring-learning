@@ -1,6 +1,6 @@
-#Spring Security
+# Spring Security
 	
-###Setup	
+### Setup	
 * [DBScript](springsecuritydemo/dbscripts/dbscript.sql)
 
 * Change [persistence-mssql.properties](springsecuritydemo/src/main/resources/persistence-mssql.properties) 
