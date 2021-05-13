@@ -14,7 +14,7 @@
 
     <packaging>war</packaging>
     <properties>
-        <tomcat.version>7.0.57</tomcat.version>
+        <tomcat.version>7.0.107</tomcat.version>
         <springframework.version>5.0.2.RELEASE</springframework.version>
         <springsecurity.version>5.0.0.RELEASE</springsecurity.version>
     </properties>
